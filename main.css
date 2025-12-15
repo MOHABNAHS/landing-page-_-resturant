@@ -1,0 +1,149 @@
+:root {
+    --primary-gold: #D4AF37;
+    /* ذهبي دافئ يطابق اللوجو */
+    --secondary-brown: #8B4513;
+    /* بني عميق يشبه الخشب */
+    --accent-red: #A52A2A;
+    /* أحمر ترابي يشبه الطوب */
+    --neutral-gray: #696969;
+    /* رمادي محايد للكراسي والتفاصيل */
+    --warm-beige: #F5F5DC;
+    /* بيج دافئ للخلفيات أو النصوص */
+    --dark-charcoal: #2F2F2F;
+    /* فحمي غامق للعناصر المهمة */
+    --soft-cream: #FFF8DC;
+    /* كريمي فاتح للنص أو الخلفيات الفاتحة */
+    --deep-navy: #000080;
+    /* نيلي غامق لإضافة عمق وفخامة */
+}
+
+body {
+    background-image: url(bcg-pc.jpg);
+    background-attachment: fixed;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Josefin Sans, sans-serif;
+    align-items: center;
+    gap: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.title {
+    color: var(--soft-cream);
+    background-image: linear-gradient(to right, );
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    background: ;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 20px rgb(100, 0, 0);
+}
+
+.title::after {
+    content: '';
+    filter: blur(50px), saturate(1.1);
+    inset: 0;
+    background: linear-gradient(to right, #000, #400, #000, #400);
+    position: absolute;
+    z-index: -1;
+    background-size: 600% 100%;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row;
+    width: 50%;
+    position: relative;
+    border-radius: 10px;
+}
+
+main::after {
+    content: '';
+    position: absolute;
+    /* background-color: #444629;
+    filter: blur(px); */
+    inset: 0;
+    z-index: -3;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-main {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: var(--soft-cream);
+    margin: 30px;
+    text-shadow: 2px 2px 6px rgb(61, 0, 0);
+}
+
+.lorem {
+    color: var(--soft-cream);
+}
+
+img {
+    border-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(36, 0, 0));
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.check {
+    color: white;
+    margin-right: 10px;
+}
+
+.social {
+    color: rgb(133, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.arabic {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #F5F5DC;
+}

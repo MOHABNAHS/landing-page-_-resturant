@@ -147,10 +147,15 @@ a {
 }
 
 @media (max-width: 768px) {
+
+    body{
+        background-image: url(bcg-mobile.jpg);
+    }
+
     main {
         flex-direction: column;
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 200px;
     }
 
     footer {
@@ -159,7 +164,10 @@ a {
         flex-direction: column;
         gap: 10px;
         justify-content: center;
+        height: 80px;
+        background-attachment: local;
         align-items: center;
+        padding-bottom: 10px;
     }
 
 }
